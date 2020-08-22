@@ -1,0 +1,279 @@
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+.page-header {
+    width: 100vw;
+    height: 16vh;
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.page-header img {
+    width: 26.4rem;
+    height: 10.5rem;
+}
+
+.page-header::after, .page-header::before {
+    content: '';
+    margin-top: 1.5%;
+    width: 100%;
+    height: 0.8rem;
+    background: linear-gradient(98.68deg, #5DE9DA 1.98%, #009C8C 89.8%);
+    display: block;
+}
+
+.page-header::after {
+    margin-left: 25px;
+    border-radius: 15px 0 0 15px;
+}
+
+.page-header::before {
+    margin-right: 5px;
+    border-radius: 0 15px 15px 0;
+}
+
+#main {
+    /* background: blue; */
+    width: 100vw;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#main h1 {
+
+    margin: 0;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7rem;
+    line-height: 100%;
+    /* or 96px */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+#main iframe {
+    height: 48rem;
+    width: 85.4rem;
+    border-radius: 5px;
+}
+
+#main a {
+    width: 48rem;
+    height: 8rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* background: linear-gradient(98.68deg, #5DE9DA 1.98%, #009C8C 89.8%); */
+    background: #009C8C;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 100%;
+    color: white;
+    transition: background 0.4s;
+    
+}
+
+#main a:hover {
+    background: #42bdb0;
+}
+
+#page-secondary {
+    background: linear-gradient(98.68deg, #5DE9DA 1.98%, #009C8C 89.8%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#page-secondary strong {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9.6rem;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+#page-secondary p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 100%;
+    /* or 48px */
+    margin: 0 10vw;
+
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+#page-premiacao {
+    background: #1D1D1D;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page-premiacao strong {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7.2rem;
+    line-height: 100%;
+    color: #FFFFFF;
+
+}
+
+#page-premiacao p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 100%;
+    margin: 0 10vw;
+
+    text-align: justify;
+
+    color: #FFFFFF;
+
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 50%;
+    }
+    .page-header img {
+        width: 200px;
+        height: 90px;
+    }
+
+    .page-header::after, .page-header::before {
+        margin-top: 3%;
+    }
+
+    #main h1 {
+        font-size: 7rem;
+    }
+
+    #main iframe {
+        height: 360px;
+        width: 640px;
+
+    } 
+
+    #main a {
+        width: 60rem;
+        height: 10rem;
+
+    }
+
+    #page-secondary p {
+        font-size: 4.2rem;
+    }
+
+    #page-premiacao img {
+        height: 175px;
+        width: 175px;
+    }
+
+    #page-premiacao strong {
+        font-size: 7rem;
+
+    }
+
+    #page-premiacao p {
+        font-size: 4rem;
+        line-height: 115%;
+
+    }
+    
+
+}
+
+
+@media (max-width: 480px) {
+    * {
+        font-size: 50%;
+    }
+    .page-header img {
+        width: 200px;
+        height: 90px;
+    }
+
+    .page-header::after, .page-header::before {
+        margin-top: 3%;
+    }
+
+    #main h1 {
+        font-size: 4.5rem;
+    }
+
+    #main iframe {
+        height: 240px;
+        width: 426px;
+
+    } 
+
+    #main a {
+        width: 45rem;
+        height: 10rem;
+
+    }
+
+    #page-secondary strong {
+        font-size: 4.5rem;
+
+    }
+
+    #page-secondary p {
+        font-size: 2.5rem;
+        line-height: 115%;
+
+    }
+
+    #page-premiacao img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #page-premiacao strong {
+        font-size: 4rem;
+
+    }
+
+    #page-premiacao p {
+        font-size: 2.5rem;
+        line-height: 115%;
+
+    }
+    
+
+}
+
