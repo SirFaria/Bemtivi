@@ -169,6 +169,36 @@ html {
 
 }
 
+#page-etapas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page-etapas h1 {
+    font-size: 8rem;
+}
+
+#page-etapas table {
+    border-collapse: collapse;
+    font-size: 6.2rem;
+    font-weight: bold;
+    text-align: start;
+    width: 100%;
+    padding: 1rem;
+
+    
+
+}
+
+#page-etapas td {
+    border-style: solid;
+    border-color: #5DE9DA;
+
+
+}
+
 @media (max-width: 1600px) {
     #page-secondary p {
         padding: 0 40px;
