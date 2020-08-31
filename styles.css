@@ -76,7 +76,7 @@ html {
     border-radius: 5px;
 }
 
-#main a {
+.button {
     width: 60rem;
     height: 10rem;
     border-radius: 15px;
@@ -100,10 +100,14 @@ html {
 
 #page-secondary {
     background: linear-gradient(98.68deg, #5DE9DA 1.98%, #009C8C 89.8%);
-    padding: 4rem 0;
+    padding: 3rem 0 5rem 0;
     text-align: center;
-
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     
 
 }
@@ -126,15 +130,16 @@ html {
 
     color: #FFFFFF;
 
-    max-width: 1600px;
-    margin: 0 auto;
+    /* max-width: 1600px;
+    margin: 0 auto; */
+    padding: 0 150px;
 
     margin-top: 20px;
 }
 
 #page-premiacao {
     background: #1D1D1D;
-    padding: 4rem 0;
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -159,7 +164,7 @@ html {
     font-weight: 500;
     font-size: 4.8rem;
     line-height: 100%;
-    padding: 0 40px;
+    padding: 0 150px;
 
     text-align: justify;
 
@@ -169,7 +174,8 @@ html {
 
 }
 
-#page-etapas {
+ #page-etapas {
+    padding: 2rem 15rem 0 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -178,30 +184,138 @@ html {
 
 #page-etapas h1 {
     font-size: 8rem;
+    margin-bottom: 20px;
 }
 
 #page-etapas table {
     border-collapse: collapse;
-    font-size: 6.2rem;
+    font-size: 4.2rem;
     font-weight: bold;
     text-align: start;
     width: 100%;
     padding: 1rem;
 
+}
+
+
+#page-etapas td {
+    height: 12rem;
+    padding: 10px;
+    border: 6px solid #5DE9DA;
+}
+
+ #page-jurados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 15rem 5rem 15rem;
+    width: 100%;
     
+}
+
+#page-jurados fieldset {
+    padding: 0rem 3rem 3rem 3rem;
+    border: 6px solid #5DE9DA;
+    border-radius: 5px;
 
 }
 
-#page-etapas td {
-    border-style: solid;
-    border-color: #5DE9DA;
+#page-jurados fieldset legend {
+    font-size: 8rem;
+    font-weight: bold;
 
+}
 
+#page-jurados fieldset p {
+    text-align: justify;
+    font-size: 4.8rem;
+    line-height: 100%;
+}
+
+#page-pessoas {
+    background: #1D1D1D;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:  3rem 15rem 5rem 15rem;
+}
+
+#layout-pessoas {
+    display: flex;
+    flex-direction: row;
+    /* padding:  0  3rem 5rem 3rem; */
+}
+
+#page-pessoas h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7.2rem;
+    padding-bottom: 7rem;
+    text-align: center;
+
+}
+
+#layout-pessoas .pessoas:not(:last-child) {
+    margin-right: 10rem;
+}
+
+.pessoas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.pessoas img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.pessoas strong {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+
+.pessoas p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 100%;
+
+}
+
+#page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
 }
 
 @media (max-width: 1600px) {
     #page-secondary p {
-        padding: 0 40px;
+        padding: 20px 40px;
+    }
+
+    #page-premiacao p {
+        padding: 20px 40px;
+    }
+
+    #page-etapas {
+        padding: 20px 40px;
+    }
+
+    #page-jurados {
+        padding: 20px 40px;
+    }
+
+    #page-pessoas {
+        padding: 20px 40px;
     }
     
 }
@@ -209,6 +323,17 @@ html {
 @media (max-width: 1280px) {
     html {
         font-size: 56%;
+    }
+
+    #layout-pessoas .pessoas:not(:last-child) {
+        margin: 0;
+        margin-bottom: 10rem;
+    }
+
+    #layout-pessoas {
+        display: flex;
+        flex-direction: column;
+        padding:  0  3rem 5rem 3rem;
     }
 }
 
@@ -230,7 +355,7 @@ html {
 @media (max-width: 480px) {
     
     html {
-        font-size: 35%;
+        font-size: 30%;
     }
 
     #main {
